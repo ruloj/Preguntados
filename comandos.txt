@@ -1,0 +1,32 @@
+Entorno de desarrollo
+    pip install virtualenv
+    python -m virtualenv -p python3 venv
+
+Django
+    Instalarlo (En cada entorno virtual)
+        pip install django
+
+    Crear Proyecto
+        python -m django startproject <Nombre_Proyecto> .
+            . => Ruta actual
+
+    Crear Aplicacion
+        python manage.py startapp <nombre_app_NOTCAMELCASE>
+
+    Hacer migraciones (Depues de crear un nuevo model)
+        python manage.py makemigrations
+    Correr migraciones
+        python manage.py migrate
+
+    Crear Super User
+        python manage.py createsuperuser
+            rulo -> pass
+
+    Correr server de desarrollo
+        python manage.py runserver
+
+    Instalar Crispy-Forms
+        pip install django-crispy-forms
+
+    Instalar Pillow (manejar archivos)
+        pip install pillow
